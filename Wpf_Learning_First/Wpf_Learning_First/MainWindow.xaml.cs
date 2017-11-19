@@ -23,32 +23,7 @@ namespace Wpf_Learning_First
         public MainWindow()
         {
             InitializeComponent();
-        }
-
-       
-
-        private void Save_Click(object sender, RoutedEventArgs e)
-        {
-            StringBuilder sb = new StringBuilder();
-            sb.Append("Full Name: ");
-            sb.Append(FullName.Text);
-            sb.Append("Sex?");
-            sb.Append((bool)Male.IsChecked ? "Male" : "Female");
-            sb.Append("Computer:  ");
-            sb.Append((bool)Desktop.IsChecked ? "Desktop" : "");
-            sb.Append((bool)Laptop.IsChecked ? "Laptop" : "");
-            sb.Append((bool)Tablet.IsChecked ? "Tablet" : "");
-            sb.Append("Your Job");
-            sb.Append(Job.SelectedItem);
-            sb.Append("Delivery Date");
-            sb.Append(Date.SelectedDate);
-            MessageBox.Show(sb.ToString());
-        }
-
-        private void Job_OnSelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            var newlySelectedItems = e.AddedItems[0];
-            MessageBox.Show(newlySelectedItems.ToString());
+            DataContext = Student.GetStudent();
         }
     }
 }

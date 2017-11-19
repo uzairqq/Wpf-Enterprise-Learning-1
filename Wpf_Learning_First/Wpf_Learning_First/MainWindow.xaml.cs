@@ -44,5 +44,11 @@ namespace Wpf_Learning_First
             sb.Append(Date.SelectedDate);
             MessageBox.Show(sb.ToString());
         }
+
+        private void Job_OnSelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var newlySelectedItems = e.AddedItems[0];
+            MessageBox.Show(newlySelectedItems.ToString());
+        }
     }
 }

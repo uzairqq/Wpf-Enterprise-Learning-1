@@ -54,7 +54,7 @@
         <TextBlock Grid.Row="3"  Text="Your Job" HorizontalAlignment="Right"
                  VerticalAlignment="Bottom" Margin="5">
         </TextBlock>
-        <ComboBox Grid.Row="3" Name="Job" Grid.Column="1" HorizontalAlignment="Left"
+        <ComboBox Grid.Row="3" SelectionChanged="Job_OnSelectionChanged" Name="Job" Grid.Column="1" HorizontalAlignment="Left"
                 VerticalAlignment="Bottom" Margin="5">
             <ComboBoxItem Content="Programmer"></ComboBoxItem>
             <ComboBoxItem Content="Manager"></ComboBoxItem>

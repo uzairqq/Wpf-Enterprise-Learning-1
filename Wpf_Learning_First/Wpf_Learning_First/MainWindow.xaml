@@ -21,6 +21,7 @@
                 <TextBlock Text="RollNo: "></TextBlock>
                 <TextBlock Margin="5,0,0,0" Text="{Binding RollNo}"></TextBlock>
             </StackPanel>
+            <Button Content="Çhange" Click="ButtonBase_OnClick"></Button>
         </StackPanel>
     </Grid>
        

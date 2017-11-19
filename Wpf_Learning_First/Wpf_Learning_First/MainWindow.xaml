@@ -6,21 +6,13 @@
         xmlns:local="clr-namespace:Wpf_Learning_First"
         mc:Ignorable="d"
         Title="Hello Wpf" Height="350" Width="525">
-  <WrapPanel>
-      <Rectangle Fill="Red" Width="50" Height="50"></Rectangle>
-      <Rectangle Fill="Green" Width="50" Height="50"></Rectangle>
-      <Rectangle Fill="Black" Width="50" Height="50"></Rectangle>
-      <Rectangle Fill="Blue" Width="50" Height="50"></Rectangle>
-      <Rectangle Fill="AntiqueWhite" Width="50" Height="50"></Rectangle>
-      <Rectangle Fill="Chocolate" Width="50" Height="50"></Rectangle>
-      <Rectangle Fill="DarkRed" Width="50" Height="50"></Rectangle>
-      <Rectangle Fill="DarkOrchid" Width="50" Height="50"></Rectangle>
-      <Rectangle Fill="HotPink" Width="50" Height="50"></Rectangle>
-      <Rectangle Fill="Green" Width="50" Height="50"></Rectangle>
-      <Rectangle Fill="HotPink" Width="50" Height="50"></Rectangle>
-      <Rectangle Fill="LightSeaGreen" Width="50" Height="50"></Rectangle>
-      <Rectangle Fill="Yellow" Width="50" Height="50"></Rectangle>
-      </WrapPanel>
+  <DockPanel >
+      <Button Height="25" Background="Red" DockPanel.Dock="Top"></Button>
+      <Button Width="25" Background="Green" DockPanel.Dock="Left"></Button>
+      <Button Background="Black" Height="25" DockPanel.Dock="Bottom"></Button>
+      <Button Height="25" Background="Yellow" DockPanel.Dock="Right"></Button>
+       <Button Background="Turquoise"></Button>
+  </DockPanel>
            
 
 </Window>

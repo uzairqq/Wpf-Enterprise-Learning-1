@@ -10,6 +10,21 @@
         <StackPanel Name="Display">
             <StackPanel Orientation="Horizontal">
                 <TextBlock Text="Id: "></TextBlock>
+                <TextBox Margin="5,0,0,0" Text="{Binding StudentId,Mode=TwoWay}"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Name: "></TextBlock>
+                <TextBox Margin="5,0,0,0" Text="{Binding StudentName,Mode=TwoWay}"></TextBox>
+            </StackPanel>
+            <StackPanel
+                Orientation="Horizontal">
+                <TextBlock Text="RollNo: "></TextBlock>
+                <TextBox Margin="5,0,0,0" Text="{Binding RollNo,Mode=TwoWay}"></TextBox>
+            </StackPanel>
+
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Id: "></TextBlock>
                 <TextBlock Margin="5,0,0,0" Text="{Binding StudentId}"></TextBlock>
             </StackPanel>
   <StackPanel Orientation="Horizontal">
@@ -21,7 +36,7 @@
                 <TextBlock Text="RollNo: "></TextBlock>
                 <TextBlock Margin="5,0,0,0" Text="{Binding RollNo}"></TextBlock>
             </StackPanel>
-            <Button Content="Çhange" Click="ButtonBase_OnClick"></Button>
+        
         </StackPanel>
     </Grid>
        

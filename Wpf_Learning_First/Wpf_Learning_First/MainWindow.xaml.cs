@@ -24,7 +24,6 @@ namespace Wpf_Learning_First
         public MainWindow()
         {
             InitializeComponent();
-            DataGrid.ItemsSource = Student.GetStudents();
         }
 
        

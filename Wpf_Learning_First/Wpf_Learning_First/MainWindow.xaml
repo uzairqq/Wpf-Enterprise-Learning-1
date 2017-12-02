@@ -5,30 +5,33 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:core="clr-namespace:System;assembly=mscorlib"
         mc:Ignorable="d"
-      
-        xmlns:wpfLearningFirst="clr-namespace:Wpf_Learning_First"
         Title="Hello Wpf" Height="360.249"  Width="525">
-  <Window.Resources>
-      <ObjectDataProvider x:Key="myEnum"
-                          MethodName="GetValues"
-                          ObjectType="{x:Type core:Enum}">
-          <ObjectDataProvider.MethodParameters>
-              <x:Type Type="wpfLearningFirst:Party"></x:Type>
-          </ObjectDataProvider.MethodParameters>
-      </ObjectDataProvider>
-  </Window.Resources>
-       
 <Grid>
-   <DataGrid AutoGenerateColumns="False" AlternatingRowBackground="Aqua" AlternationCount="2" Name="DataGrid" >
-       <DataGrid.Columns>
-                <DataGridTextColumn Header="Name" Binding="{Binding Name}"></DataGridTextColumn>
-                <DataGridTextColumn Header="Title" Binding="{Binding Title}"></DataGridTextColumn>
-                <DataGridCheckBoxColumn Header="Re-Elected?" Binding="{Binding WasReElected}"></DataGridCheckBoxColumn>
-                <DataGridComboBoxColumn Header="Party"
-                                        SelectedItemBinding="{Binding Affiliation}"
-                                        ItemsSource="{Binding Source={StaticResource myEnum}}"></DataGridComboBoxColumn>
-       </DataGrid.Columns>
-   </DataGrid>
+<TreeView>
+    <TreeViewItem Header="Animals">
+        <TreeViewItem Header="Mammals">
+            <TreeViewItem Header="Dogs">
+                <TreeViewItem Header="Spaniels"></TreeViewItem>
+                <TreeViewItem Header="Working Dogs"></TreeViewItem>
+                <TreeViewItem Header="Retreivers"></TreeViewItem>
+            </TreeViewItem>
+            <TreeViewItem Header="Cats">
+                <TreeViewItem Header="Tiger"></TreeViewItem>
+                <TreeViewItem Header="Leapords"></TreeViewItem>
+                <TreeViewItem Header="Cougar"></TreeViewItem>
+            </TreeViewItem>
+        </TreeViewItem>
+        <TreeViewItem Header="Marsupials">
+            <TreeViewItem Header="kangaroo"></TreeViewItem>
+            <TreeViewItem Header="Koala"></TreeViewItem>
+        </TreeViewItem>
+    </TreeViewItem>
+    <TreeViewItem Header="Plants">
+    </TreeViewItem>
+    <TreeViewItem Header="Other">
+    </TreeViewItem>
+    
+</TreeView>
 </Grid>
 
 </Window>

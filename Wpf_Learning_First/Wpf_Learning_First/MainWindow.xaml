@@ -8,36 +8,24 @@
         Title="Hello Wpf" Height="360.249"  Width="525">
     
 <Grid>
-    <StatusBar Name="StatusBar" 
-               VerticalAlignment="Bottom" 
-               Background="Bisque">
-        <StatusBarItem>
-            <TextBlock Text="Downloading File..."></TextBlock>
-        </StatusBarItem>
-        <StatusBarItem>
-        <ProgressBar Width="100" Height="20" Name="ProgressBar">
-            <ProgressBar.Triggers>
-                <EventTrigger RoutedEvent="ProgressBar.Loaded">
-                    <BeginStoryboard>
-                        <Storyboard>
-                                    <DoubleAnimation Storyboard.TargetName="ProgressBar"
-                                                 Storyboard.TargetProperty="Value"
-                                                 From="0"
-                                                 To="100"
-                                                 Duration="0:0:10"></DoubleAnimation>
-                        </Storyboard>
-                    </BeginStoryboard>
-                </EventTrigger>
-            </ProgressBar.Triggers>
-        </ProgressBar>
-        </StatusBarItem>
-            <Separator/>
-        <StatusBarItem>
-            <TextBlock>Online</TextBlock>
-        </StatusBarItem>
-        <StatusBarItem HorizontalAlignment="Right">
-            <Button Content="Help" Name="HelpBtn" Click="HelpBtn_OnClick"></Button>
-        </StatusBarItem>
-        </StatusBar>
+  <Menu>
+      <MenuItem Header="File">
+          <MenuItem Header="New"></MenuItem>
+          <MenuItem Header="Open"></MenuItem>
+          <Separator/>
+          <MenuItem Header="Add">
+              <MenuItem Header="New Window"></MenuItem>
+              <MenuItem Header="New Project"></MenuItem>
+          </MenuItem>
+          <Separator/>
+          <MenuItem Header="Save As" IsCheckable="True">
+          </MenuItem>
+      </MenuItem>
+      <MenuItem Header="Edit">
+          <MenuItem Header="Cut"></MenuItem>
+          <MenuItem Header="Copy"></MenuItem>
+          <MenuItem Header="Paste"></MenuItem>
+            </MenuItem>
+  </Menu>
 </Grid>
 </Window>

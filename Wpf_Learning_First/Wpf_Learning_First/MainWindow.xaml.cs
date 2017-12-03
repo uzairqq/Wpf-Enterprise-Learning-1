@@ -26,6 +26,10 @@ namespace Wpf_Learning_First
             InitializeComponent();
         }
 
-       
+
+        private void HelpBtn_OnClick(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("This is  a help  dialog");
+        }
     }
 }

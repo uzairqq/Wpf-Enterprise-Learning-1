@@ -8,24 +8,34 @@
         Title="Hello Wpf" Height="360.249"  Width="525">
     
 <Grid>
-  <Menu>
-      <MenuItem Header="File">
-          <MenuItem Header="New"></MenuItem>
-          <MenuItem Header="Open"></MenuItem>
-          <Separator/>
-          <MenuItem Header="Add">
-              <MenuItem Header="New Window"></MenuItem>
-              <MenuItem Header="New Project"></MenuItem>
-          </MenuItem>
-          <Separator/>
-          <MenuItem Header="Save As" IsCheckable="True">
-          </MenuItem>
-      </MenuItem>
-      <MenuItem Header="Edit">
-          <MenuItem Header="Cut"></MenuItem>
-          <MenuItem Header="Copy"></MenuItem>
-          <MenuItem Header="Paste"></MenuItem>
-            </MenuItem>
-  </Menu>
+ 
+    <ListBox>
+        <ListBox.ContextMenu>
+            <ContextMenu>
+                <MenuItem Header="File">
+                    <MenuItem Header="New"></MenuItem>
+                    <MenuItem Header="Open"></MenuItem>
+                    <Separator/>
+                    <MenuItem Header="Add">
+                        <MenuItem Header="New Window"></MenuItem>
+                        <MenuItem Header="New Project"></MenuItem>
+                    </MenuItem>
+                    <Separator/>
+                    <MenuItem Header="Save As" IsCheckable="True">
+                    </MenuItem>
+                </MenuItem>
+                <MenuItem Header="Edit">
+                    <MenuItem Header="Cut"></MenuItem>
+                    <MenuItem Header="Copy"></MenuItem>
+                    <MenuItem Header="Paste"></MenuItem>
+                </MenuItem>
+
+                </ContextMenu>
+        </ListBox.ContextMenu>
+        <ListBoxItem Content="Item 1"></ListBoxItem>
+        <ListBoxItem Content="Item 2"></ListBoxItem>
+        <ListBoxItem Content="Item 3"></ListBoxItem>
+        <ListBoxItem Content="Item 4"></ListBoxItem>
+        </ListBox>
 </Grid>
 </Window>
